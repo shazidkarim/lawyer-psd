@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+}
+.banner h1{
+    margin-top: 146px;
+    color: #fff;
+    font-size: 82px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.icon{
+    position: absolute;
+    left: 50%;
+    bottom: 11%;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 25px;
+    animation: updown 1.4s infinite linear;
+}
+@keyframes updown{
+    0%{
+        bottom: 18%;
+    
+    }
+    50%{
+        bottom: 15%;
+    }
+}
+.who{
+    
+margin-top: 100px;
+margin-bottom: 150px;
+}
+.who span, .what span, .main span, .contact span{ 
+    position: relative;
+    height: 4px;
+    width: 70px;
+    display: block;
+}
+.who span::after, .what span::after, .main span::after, .contact span::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    transform: translate(-50%);
+    background-color: #e74611;
+    transition: .8s all ease-in-out;
+    margin-bottom: 12px;
+}
+
+.who:hover span::after, .what:hover span::after, .main:hover span::after, .contact:hover span::after{
+    width: 100%;
+}
+.who h5{
+
+font-size: 36px;
+color: #33417c;
+margin-bottom: 21px;
+font-weight: bold;
+}
+.who p{
+
+font-size: 14px;
+
+color: #bab5b2;
+}
+
+
+.what{
+    background-image: url(../images/what-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.what h5{
+    font-size: 36px;
+    color: #33417c;
+    margin-top: 74px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+.what{
+    min-height: 80vh;
+}
+.feature-text{
+    
+    color: #fff;
+    
+}
+.feature-text i{
+
+font-size: 45px;
+}
+.feature-text h3{padding-bottom: 127px;}
+.feature{
+    position: relative;
+}
+.feature::after{
+    content: "";
+    position: absolute;
+    left: 33px;
+    bottom: 0;
+    width: 83%;
+    height: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36226f+1,36226f+100&0+24,1+100 */
+background: -moz-linear-gradient(top,  rgba(54,34,111,0) 1%, rgba(54,34,111,0) 24%, rgba(54,34,111,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(54,34,111,0) 1%,rgba(54,34,111,0) 24%,rgba(54,34,111,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(54,34,111,0) 1%,rgba(54,34,111,0) 24%,rgba(54,34,111,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0036226f', endColorstr='#36226f',GradientType=0 ); /* IE6-9 */
+
+    transition: .5s all ease-in-out;
+}
+.feature:hover::after{
+    height: 100%;
+    
+
+}
+
+.feature-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s all ease-in-out;
+    opacity: 0;
+    z-index: 99;
+}
+.feature:hover .feature-text{
+    opacity: 100%;
+    animation: feature-text 0.5s all ease-in-out;
+}
+@keyframes feature-text{
+    0%{
+        top: 40%;
+
+    }
+    100%{
+        top: 80%;
+       
+    }
+}
+.main{
+    background-image: url(../images/mainbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 140vh;
+}
+.main h5{
+
+font-size: 36px;
+
+color: #fff;
+margin-top: 387px;
+}
+.main p{
+
+font-size: 14px;
+
+color: #a3a0cc;
+}
+.main h6{
+    
+color: #e65826;
+}
+.main-img{
+    position: relative;
+    padding-bottom: 30px;
+
+}
+.img-text{
+    position: absolute;
+    top: 79%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+    z-index: 99;
+}
+.main-img:hover .img-text{
+    opacity: 100%;
+    animation: img-text 0.5s all ease-in-out;
+}
+@keyframes img-text{
+    0%{
+        top: 40%;
+    }
+    100%{
+        top:50%
+    }
+
+}
+.main-img h3{
+    color: #fff;
+
+}
+.main-img::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 29px;
+    width: 82%;
+    height: 0%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36226f+1,36226f+99&0+39,0.99+100 */
+    background: -moz-linear-gradient(top,  rgba(54,34,111,0) 1%, rgba(54,34,111,0) 39%, rgba(54,34,111,0.97) 99%, rgba(54,34,111,0.99) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(54,34,111,0) 1%,rgba(54,34,111,0) 39%,rgba(54,34,111,0.97) 99%,rgba(54,34,111,0.99) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(54,34,111,0) 1%,rgba(54,34,111,0) 39%,rgba(54,34,111,0.97) 99%,rgba(54,34,111,0.99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0036226f', endColorstr='#fc36226f',GradientType=0 ); /* IE6-9 */
+    transition: 0.5s all ease-in-out;
+}
+.main-img:hover::after{
+    height: 100%;
+}
+.main-img1, .main-img2{
+    margin-top: 150px;
+}
+.language h2{
+
+color: #36226f;
+
+font-weight: bold;
+
+margin-top: 100px;
+}
+.language h5{
+
+color: #36226f;
+
+font-size: 25px;
+
+font-weight: bold;
+
+margin-top: 60px;
+}
+.language p{
+
+font-size: 14px;
+
+color: #bab5b3;
+}
+.language h6{
+
+font-size: 14px;
+
+font-weight: bold;
+
+color: #e76128;
+}
+.language{
+    min-height: 70vh;
+}
+.contact{
+    background-color: #36226f;
+    min-height: 60vh;
+}
+.contact h2{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.contact form input{
+
+background-color: transparent;
+
+border: none;
+
+border-bottom: 2px solid #564a98;
+color: #fff;
+margin-bottom: 50px;
+}
+.contact form input::placeholder{
+    color: #fff;
+    font-size: 14px;
+    
+    
+
+}
+.contact form input[type="submit"]{
+    border: none;
+    border: 1px solid #e76128;
+    background-color: #e76128;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 80px;
+    margin-left: 150px;
+}
+footer{
+    min-height: 15vh;
+    background-color: #16102b;
+}
+footer p{
+    font-size: 15px;
+    color: #6c64a0;
+}
+footer ul{
+
+list-style: none;
+
+color: #c1bddb;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin-left: 200px;
+}
+footer ul li{
+    
+padding-right: 24px;
+    
+font-size: 22px;
+}
